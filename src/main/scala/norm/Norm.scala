@@ -1,0 +1,5 @@
+package norm
+
+class Norm {
+
+}

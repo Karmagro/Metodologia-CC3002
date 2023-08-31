@@ -1,0 +1,5 @@
+package square
+
+class HomeSquare {
+
+}
