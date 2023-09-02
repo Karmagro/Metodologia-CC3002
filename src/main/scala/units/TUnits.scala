@@ -15,8 +15,8 @@ trait TUnits{
     val evasionPoints : Int
 
     var stars : Int
-
-    def throwDice : Int
+    def throwDice() : Int
+    def winStars(numberOfStars : Int) : Unit
 
 
 }

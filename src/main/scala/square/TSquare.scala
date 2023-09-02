@@ -1,6 +1,6 @@
 package square
 
-import units.TUnits
+import units.TPlayer
 
 
 trait TSquare {
@@ -9,12 +9,11 @@ trait TSquare {
 
   val squareName : String
 
-  var playerInSquare : Array[TUnits]
-
-  def squareEffect(affectedPlayer: TUnits) : Unit
-
-  def playerEnterSquare(referencedPlayer : TUnits) : Unit
-
-  def playerLeftSquare(referencedPlayer : TUnits) : Unit
+  var playerInSquare : Array[TPlayer]
+  def squareEffect(affectedPlayer: TPlayer) : Unit
+  def playerEnterSquare(referencedPlayer : TPlayer) : Unit
+  def playerLeftSquare(referencedPlayer : TPlayer) : Unit
+  def askIfCombat(referencedPlayer: TPlayer) : Unit
+  def startCombat() : Unit
 
 }
